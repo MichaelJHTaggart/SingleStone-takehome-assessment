@@ -23,3 +23,5 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### Mockup of what the result should look like
+
+![Screen Shot 2022-04-28 at 11 58 46 AM](https://user-images.githubusercontent.com/63270278/165823629-3ed2cfab-7500-421e-bc43-cd33ab551813.png)
