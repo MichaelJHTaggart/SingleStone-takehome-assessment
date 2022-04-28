@@ -8,7 +8,7 @@ I tracked my hours of time spent:
  -Coding:
 
 I kept track of the sessions of time I was able to sit down and work on this project:
-April 28, 2022: 40 min,
+April 28, 2022: 48 min,
 April 29, 2022:
 ### If you wish to run this project locally on your machine
 
