@@ -12,10 +12,11 @@ April 28, 2022: 40 min,
 April 29, 2022:
 ### If you wish to run this project locally on your machine
 
- 1. Go to your terminal/bash and git clone ``repository URL here``
- 2. Run `npm install` to get dependencies locally
- 3. Run `npm start` to run the app in development mode
- 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+ 1. Go to your terminal/bash and run `git clone https://github.com/MichaelJHTaggart/SingleStone-takehome-assessment.git`
+ 2. Run `cd SingleStone-takehome-assessment`
+ 3. Run `npm install` to get dependencies locally
+ 4. Run `npm start` to run the app in development mode
+ 5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
 ### `npm test`
 
