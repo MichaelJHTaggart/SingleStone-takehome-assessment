@@ -1,0 +1,77 @@
+*,
+body,
+div {
+  margin: 0;
+  color: white;
+}
+header {
+  background-color: #222222;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/public/photo-couch.jpeg');
+  height: 93vh;
+}
+h1 {
+  font-family: Lato;
+  font-size: 3em;
+  position: relative;
+  left: -2px;
+}
+img {
+  filter: invert(87%) sepia(16%) saturate(895%) hue-rotate(105deg)
+    brightness(89%) contrast(98%);
+  height: auto;
+  width: 80px;
+}
+button {
+  border-radius: 15px;
+  border-style: none;
+  background-color: #79e0c4;
+  color: #222222;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #65b9a2;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.1);
+}
+button:active{
+  background-color: #b965a0;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    height: 10vh;
+  }
+  img {
+    filter: invert(87%) sepia(16%) saturate(895%) hue-rotate(105deg)
+      brightness(89%) contrast(98%);
+    height: auto;
+    width: 180px;
+  }
+  button {
+    font-size: 1.5em;
+    border-radius: 35px;
+    border-style: none;
+    background-color: #79e0c4;
+    color: #222222;
+    padding: 15px 35px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    width: 70%;
+    font-weight: 800;
+  }
+}

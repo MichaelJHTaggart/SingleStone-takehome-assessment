@@ -4,12 +4,12 @@ Following the parameters outlined [here](https://docs.google.com/document/d/16bA
 
 I received this project on April 27, 2022
 I tracked my hours of time spent:
- - Reading instructions, Planning, and Setup: 
- - Coding:
+ - Reading instructions, Planning, and Setup: 48 min.
+ - Coding: 4 hours 41 min
 
 I kept track of the sessions of time I was able to sit down and work on this project:
- - April 28, 2022: 48 min,
- - April 29, 2022:
+ - April 28, 2022: 48 min
+ - April 29, 2022: 4 hours 41 min
 ### If you wish to run this project locally on your machine
 
  1. Go to your terminal/bash and run `git clone https://github.com/MichaelJHTaggart/SingleStone-takehome-assessment.git`

@@ -1,1 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  position: relative;
+  left: 17%;
+}
+.hero-description {
+  font-family: Lato;
+  font-weight: bolder;
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.main {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.main-content {
+  position: relative;
+  left: 17%;
+}
+
+@media screen and (max-width: 450px) {
+  .hero-description {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    width: 70%;
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+}
