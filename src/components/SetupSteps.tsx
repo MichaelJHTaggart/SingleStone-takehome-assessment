@@ -10,41 +10,48 @@ interface Step {
 interface Setup {
   id: string;
   stepNumber: string;
-  versionedContent: Step[];
+  versionContent: Step[];
 }
 
 export const SetupSteps = () => {
-  const [steps, setSteps] = useState<Setup[]>([]);
+  const [steps, setSteps] = useState<Setup[] | undefined>(undefined);
 
   useEffect(() => {
     fetch(
       'https://uqnzta2geb.execute-api.us-east-1.amazonaws.com/default/FrontEndCodeChallenge'
     )
       .then((response) => response.json())
-      .then((data: []) =>
+      .then((data: Setup[]) =>
         setSteps(
           //sort the data numerically 1-4
-          data.sort(
-            (a: Setup, b: Setup) =>
-              parseInt(a.stepNumber) - parseInt(b.stepNumber)
-          )
+          data
+            .sort(
+              (a: Setup, b: Setup) =>
+                parseInt(a.stepNumber) - parseInt(b.stepNumber)
+            )
+            // each index of the Setup[] returns a modified Setup object.
+            .map(
+              (setUp: Setup): Setup => ({
+                ...setUp,
+
+                // update the versionContent of each index to only return one object of the most recent version
+                versionContent: [
+                  setUp.versionContent.reduce(
+                    (previousValue: Step, currentValue: Step): Step => {
+                      if (
+                        previousValue.effectiveDate > currentValue.effectiveDate
+                      ) {
+                        return previousValue;
+                      } else {
+                        return currentValue;
+                      }
+                    }
+                  ),
+                ],
+              })
+            )
         )
       );
-
-    setSteps((previousState): Setup[] => {
-      // iterate through the array of stepUps
-       previousState?.map((step): Setup[] => {
-        if (step?.versionedContent?.length ?? 0 > 1) {
-          // iterate through the array of versionedContent for steps
-          step?.versionedContent?.filter((version, index, array): Step[] => {
-            // compare the ISO date of each object in the array to each other
-            version?.effectiveDate ?? '' > array[index + 1].effectiveDate
-            // return the latest version
-          });
-        }
-      });
-    }
-    );
   }, []);
 
   return (
@@ -52,12 +59,12 @@ export const SetupSteps = () => {
       <div>
         <h3>How It Works</h3>
       </div>
-      {steps?.map(({ id, stepNumber }) => (
+      {steps?.map(({ id, stepNumber, versionContent }) => (
         <div key={id}>
-          <p>{id}</p>
           <span></span>
-          <p>{stepNumber}</p>
-          {/* <p>{versionContent[0]}</p> */}
+          <p>0{stepNumber}</p>
+          <p>{versionContent[0].title}</p>
+          <p>{versionContent[0].body}</p>
         </div>
       ))}
     </div>
