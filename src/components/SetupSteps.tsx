@@ -59,14 +59,17 @@ export const SetupSteps = () => {
       <div>
         <h3>How It Works</h3>
       </div>
-      {steps?.map(({ id, stepNumber, versionContent }) => (
-        <div key={id}>
-          <span></span>
-          <p>0{stepNumber}</p>
-          <p>{versionContent[0].title}</p>
-          <p>{versionContent[0].body}</p>
-        </div>
-      ))}
+      <div className="steps">
+        {' '}
+        {steps?.map(({ id, stepNumber, versionContent }) => (
+          <div className="step" key={id}>
+            <p><span className='stepNumber'>0{stepNumber}</span></p>
+            <hr />
+            <p className='title'><strong>{versionContent[0].title.toUpperCase()}</strong></p>
+            <p>{versionContent[0].body}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

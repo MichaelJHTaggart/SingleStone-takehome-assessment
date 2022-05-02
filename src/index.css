@@ -1,9 +1,24 @@
+@font-face {
+  font-family: 'LatoThin';
+  src: url('./fonts/Lato-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LatoRegular';
+  src: url('./fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url('./fonts/Lato-Bold.ttf') format('truetype');
+}
+
 *,
 body,
 div {
   margin: 0;
   color: white;
 }
+
 header {
   background-color: #222222;
   height: 5vh;
@@ -22,7 +37,7 @@ main {
   height: 93vh;
 }
 h1 {
-  font-family: Lato;
+  font-family: 'LatoThin';
   font-size: 3em;
   position: relative;
   left: -2px;
@@ -46,7 +61,7 @@ button:hover {
   transition: all 0.1s ease-in-out;
   transform: scale(1.1);
 }
-button:active{
+button:active {
   background-color: #b965a0;
 }
 
@@ -67,6 +82,7 @@ button:active{
     background-color: #79e0c4;
     color: #222222;
     padding: 15px 35px;
+    margin: 0;
   }
 
   h1 {
