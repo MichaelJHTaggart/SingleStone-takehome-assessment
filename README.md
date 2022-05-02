@@ -44,9 +44,9 @@ I kept track of the sessions of time I was able to sit down and work on this pro
    - 4 hours 41 min (Mostly CSS and some typescript) 
    - 2 hours 34 min (typescript issue && learning how to solve them)
  - April 30, 2022: 
-  - 44 min (install and research Storybook as a visual testing option)
-  - 1 hour 26 min (typescript issue && learning how to solve them)
-  - 20 min (Solved! typescript issue resolved)
+   -- 44 min (install and research Storybook as a visual testing option)
+   -- 1 hour 26 min (typescript issue && learning how to solve them)
+   -- 20 min (Solved! typescript issue resolved)
   
 - May 1, 2022:
   - 1 hour 20 min (research and practice writing first tests ever! Watched lecture [here](https://app.pluralsight.com/library/courses/testing-react-components/table-of-contents))
