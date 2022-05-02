@@ -34,7 +34,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('/public/photo-couch.jpeg');
-  height: 93vh;
+  height: 95vh;
 }
 h1 {
   font-family: 'LatoThin';
