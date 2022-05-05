@@ -1,6 +1,6 @@
 # SingleStone Takehome Assessment
 
-https://user-images.githubusercontent.com/63270278/166343655-247e9456-9c66-4bf8-bb44-a38a212efba2.mov
+# https://single-stone-takehome-assessment.vercel.app/
 
 Following the parameters outlined [here](https://docs.google.com/document/d/16bA8004xNlYDFANvsMu0w_OW800ar_S6/edit?usp=sharing&ouid=115468126646789142343&rtpof=true&sd=true). I built this assessment!
 
